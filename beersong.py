@@ -2,6 +2,7 @@
 ## 1/26/2018
 ## CSI 3370
 def main():
+    ninety_nine_bottles_of_beer()
 
 def ninety_nine_bottles_of_beer():
     numbottles = 99
