@@ -3,14 +3,16 @@
 ## CSI 3370
 def main():
 
-
 def ninety_nine_bottles_of_beer():
     numbottles = 99
 
     for x in range(numbottles, 0, -1):
         if (x > 1):
             print(str(x) + " bottles of beer on the wall, " + str(x) + " bottles of beer")
-            print("take	one	down, pass it around, " + str(x-1) + " bottles of beer on the wall.")
+            if(x-1 > 1):
+                print("take	one	down, pass it around, " + str(x-1) + " bottles of beer on the wall.")
+            else:
+                print("take	one	down, pass it around, " + str(x-1) + " bottle of beer on the wall.")
         else:
             print("1 bottle of beer on the wall, 1 bottle of beer")
             print("take	one	down, pass it around, no more bottles of beer on the wall.")
